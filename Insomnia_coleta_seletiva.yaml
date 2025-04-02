@@ -1,0 +1,142 @@
+type: collection.insomnia.rest/5.0
+name: Coleta Seletiva
+meta:
+  id: wrk_358fb047a0a442fdabe597dd82ec825a
+  created: 1743539373101
+  modified: 1743539373101
+collection:
+  - url: "{{ base_url }}/coletores"
+    name: Cadastrar Coletor
+    meta:
+      id: req_fcd53e85da3d49c8b365057d10dadf65
+      created: 1743539373106
+      modified: 1743550669142
+      isPrivate: false
+      sortKey: -1743539373212
+    method: POST
+    body:
+      mimeType: application/json
+      text: '{"nome": "Carlos Oliveira", "descricao": "Coletor da zona norte"}'
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ base_url }}/coletores"
+    name: Listar Coletores
+    meta:
+      id: req_6ee9ed8e33984d689be121cdbad95ea5
+      created: 1743539373107
+      modified: 1743550841934
+      isPrivate: false
+      sortKey: -1743539373162
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ base_url }}/contratos/1"
+    name: Registrar Contrato
+    meta:
+      id: req_074896bf175c4268a87fa80d9c000723
+      created: 1743539373111
+      modified: 1743550897942
+      isPrivate: false
+      sortKey: -1743539373118.25
+    method: POST
+    body:
+      mimeType: application/json
+      text: "[1, 2]"
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ base_url }}/rotas"
+    name: Listar Rotas
+    meta:
+      id: req_39b2fe2519f94bc5a7995db3e13c9d1e
+      created: 1743539373111
+      modified: 1743550863412
+      isPrivate: false
+      sortKey: -1743539373124.5
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ base_url }}/rotas"
+    name: Cadastrar Rota
+    meta:
+      id: req_48dfbe0d8e524daca01c41c852be6979
+      created: 1743539373111
+      modified: 1743550853094
+      isPrivate: false
+      sortKey: -1743539373137
+    method: POST
+    body:
+      mimeType: application/json
+      text: '{"descricao": "Rota 01", "area": "Centro", "percentualEficiencia": 85.5}'
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ base_url }}/contratos"
+    name: Listar Contratos
+    meta:
+      id: req_0235eac65fbd4b2497d8b5c09e0799e6
+      created: 1743539373112
+      modified: 1743550923831
+      isPrivate: false
+      sortKey: -1743539373112
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_5adfa854cf8da7d6c52cbe3ef5b17cf9ad195465
+    created: 1743539373113
+    modified: 1743539373113
+environments:
+  name: Base Environment
+  meta:
+    id: env_28b6952095374ec1b47941fa896a3670
+    created: 1743539373105
+    modified: 1743539439875
+    isPrivate: false
+  data:
+    base_url: http://localhost:8181
